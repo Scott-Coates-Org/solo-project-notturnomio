@@ -103,6 +103,6 @@ This project is a Kanban SPA, based on the official Trello API - fulfills the re
 
 ### Mockups
 
-| ![Benjamin Bannekat](/mockups/screen_1.png) | ![Benjamin Bannekat](/mockups/screen_2.png) |
-| ------------------------------------------- | ------------------------------------------- |
-| ![Benjamin Bannekat](/mockups/screen_3.png) | ![Benjamin Bannekat](/mockups/screen_4.png) |
+| ![kanban mockup 1](/mockups/Screen1.png)  | ![kanban mockup 2](/mockups/screen_2.png) |
+| ----------------------------------------- | ----------------------------------------- |
+| ![kanban mockup 3](/mockups/screen_3.png) | ![kanban mockup 4](/mockups/screen_4.png) |
