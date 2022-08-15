@@ -1,4 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8202664&assignment_repo_type=AssignmentRepo)
+
 # React Solo Project
 
 ## Requirements
@@ -29,7 +30,7 @@ We are using "yarn" instead of "npm" in this project.
 4. `npm install -g firebase-tools`
 5. `firebase login`
 6. `firebase init`
-7. `yarn build` (*remember to always build before deploying your code to production*).
+7. `yarn build` (_remember to always build before deploying your code to production_).
 8. `firebase deploy`
 9. If you run into trouble take a look at: https://www.geeksforgeeks.org/how-to-deploy-react-project-on-firebase/
 
@@ -53,7 +54,7 @@ We are using "yarn" instead of "npm" in this project.
 2. The "redux" folder contains an example reducer (counter). You can delete this.
 3. You can use whichever CSS library you wish, or just plain CSS/SASS (preferably modules).
 4. You may modify the boilerplate (e.g. delete dummy text in App.js, the counter, the the logo.svg, etc.)
-5. V1 of this project is due in 3 weeks. Remeber to KISS (Keep It Simple, Stupid). You need to think of v1 as a conceptual boundary of constraints; anything *outside those boundaries must be saved for a future version*.
+5. V1 of this project is due in 3 weeks. Remeber to KISS (Keep It Simple, Stupid). You need to think of v1 as a conceptual boundary of constraints; anything _outside those boundaries must be saved for a future version_.
 
 <!---
 *** WHEN YOU ARE UP AND RUNNING, YOU MAY DELETE EVERYTHING ABOVE -EXCEPT- THE VERY TOP LINE. ***
@@ -71,12 +72,37 @@ Go to the [milestones tab](../../milestone/1) to track your progress.
 
 ### Description
 
-**Required:** update [your repository](https://stackoverflow.com/questions/7757751/how-do-you-change-a-repository-description-on-github) with a short description of your project.
+#### DELIVERABLE
+
+This project is a Kanban SPA, based on the official Trello API - fulfills the real needs of the fictional Dunder Mifflin sales managers, from the popular sitcom about the working lives of office workers at the Scranton branch of a paper company. The application allows the following functionality:
+
+##### MAIN SYSTEM
+
+- User authentication
+- Ability for users to manage profile settings
+- Ability for users to create Lists and Cards
+- Ability for users to fetch the data of products from API database
+- Synchronization with the main board on Trello by API
+
+#### MILESTONES (Edited):
+
+- Sprint 1 - 10% :
+  - Main Dashboard UI - header, board, lists, cards, etc...
+  - Functionality of main components
+  - Firebase database setup
+- Sprint 2 - 40% :
+  - User Authentication UI
+  - API user authorisation setup
+  - Trello API setup
+- Sprint 3 - 100% :
+  - User profile UI - edit profile, change settings, etc...
+  - Staples.com database API setup
+- Sprint 4 - extra :
+  - Bugs fixing
+  - UI improvements
 
 ### Mockups
 
-*View `README.md` to see how to replace me with mockups.*
-
-| ![Benjamin Bannekat](/mockups/github-cat.png) | ![Benjamin Bannekat](/mockups/github-cat.png) |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![Benjamin Bannekat](/mockups/github-cat.png) | ![Benjamin Bannekat](/mockups/github-cat.png) |
+| ![Benjamin Bannekat](/mockups/screen_1.png) | ![Benjamin Bannekat](/mockups/screen_2.png) |
+| ------------------------------------------- | ------------------------------------------- |
+| ![Benjamin Bannekat](/mockups/screen_3.png) | ![Benjamin Bannekat](/mockups/screen_4.png) |
