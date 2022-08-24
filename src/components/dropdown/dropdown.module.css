@@ -1,0 +1,31 @@
+.dd-header-title {
+  cursor: pointer;
+}
+
+.dd-wrapper {
+  position: relative;
+}
+
+.dd-list {
+  z-index: 5;
+  min-width: max-content;
+  position: absolute;
+  text-align: right;
+  background-color: #c6c6c6;
+  right: 0px;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.dd-list-item {
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dd-list-item:hover {
+  color: #fff;
+  background-color: #24307e;
+  transition: 200ms;
+}

@@ -68,7 +68,7 @@ Go to the [milestones tab](../../milestone/1) to track your progress.
 
 ### Public URL
 
-[Replace me with the link to your app's URL](https://www.google.com/)
+(https://dm-dashboard-95f16.web.app/)
 
 ### Description
 

@@ -1,0 +1,51 @@
+.list {
+  min-width: 25%;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-top {
+  display: flex;
+  padding: 10px;
+}
+
+.list-top-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #1c287b;
+}
+
+.list-top-title span {
+  color: gray;
+}
+
+.list-cards {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-bottom: 10px solid #c5c5c5;
+  background-color: #d7d7d7;
+}
+
+.list-cards-dragging {
+  background-color: #d7d7d7;
+  padding: 8px;
+  transition: 200ms;
+}
+
+.list-cards-dragging-over {
+  background-color: #d7dcff;
+  padding: 8px;
+}
+
+.add-new-card {
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 5px;
+  box-shadow: #ccc 1px 2px 0px 1px, #ccc 0px 1px 1px 0px;
+}
