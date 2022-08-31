@@ -1,0 +1,26 @@
+[
+  {
+    "775db463-8b02-4d05-9dbe-6945cdc95d67": {
+      "listName": "ToDo",
+      "cards": [
+        "b6cfa9ae-788e-42ec-ab80-d63d2fc5f627",
+        "5d276e30-3cbc-456c-88be-494d220ebdcd"
+      ],
+      "index": "0"
+    }
+  },
+  {
+    "a3350f54-6a05-4fc5-88d8-259c49689184": {
+      "listName": "InProgress",
+      "cards": ["f99c8218-ac22-4b16-bbdf-667088dc0bf0"],
+      "index": "1"
+    }
+  },
+  {
+    "6348a035-4c8c-4829-a1ef-faab24e2edd1": {
+      "listName": "Completed",
+      "cards": ["5b90e277-a720-44cc-af84-e209e6d484fc"],
+      "index": "2"
+    }
+  }
+]

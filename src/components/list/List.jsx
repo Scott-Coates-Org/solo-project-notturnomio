@@ -13,6 +13,7 @@ function List({
   onDeleteList,
   onDeleteCard,
   cardsData,
+  labelsData,
 }) {
   return (
     <div id={listId} className={styles.list} key={listId + listIndex}>
@@ -30,6 +31,7 @@ function List({
         <Card
           listCards={cards}
           cardsData={cardsData}
+          labelsData={labelsData}
           listId={listId}
           onSelect={onDeleteCard}
         />

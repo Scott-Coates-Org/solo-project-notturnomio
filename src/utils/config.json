@@ -1,0 +1,5 @@
+{
+  "apiEndPoint": "https://dm-dashboard-95f16-default-rtdb.europe-west1.firebasedatabase.app/",
+  "apiServerPoint": "http://localhost:4000/api/v1/",
+  "isFirebase": true
+}

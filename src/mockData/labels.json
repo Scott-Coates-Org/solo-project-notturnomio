@@ -1,0 +1,32 @@
+[
+  {
+    "id": "daa1345b-a789-438b-97f9-1db71d8a5323",
+    "labelName": "Urgent",
+    "color": "red"
+  },
+  {
+    "id": "12b48155-2a3b-4ad1-be54-88f442871711",
+    "labelName": "South",
+    "color": "orange"
+  },
+  {
+    "id": "49adfcb4-2d70-443d-a9fa-f82438619e18",
+    "labelName": "Meeting",
+    "color": "green"
+  },
+  {
+    "id": "e5d01e24-0762-4c01-8731-8922002fb897",
+    "labelName": "Paperwork",
+    "color": "darkslateblue"
+  },
+  {
+    "id": "f9350f01-b273-46d5-bbc2-daffc95b029c",
+    "labelName": "Accounting",
+    "color": "purple"
+  },
+  {
+    "id": "b8e91043-f4d7-49cd-a820-8d207603f45c",
+    "labelName": "West",
+    "color": "coral"
+  }
+]
