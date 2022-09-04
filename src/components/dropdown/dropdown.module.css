@@ -1,5 +1,20 @@
 .dd-header-title {
+  height: 26px;
+  width: 26px;
+  border-radius: 3px;
   cursor: pointer;
+  text-align: center;
+  color: #545454;
+  /* z-index: 3; */
+}
+
+.dd-header-title:hover {
+  cursor: pointer;
+  /* z-index: 3; */
+  background-color: #f3f3f3;
+  color: #1c287b;
+  /* border: 1px solid #686868; */
+  transition: 200ms;
 }
 
 .dd-wrapper {

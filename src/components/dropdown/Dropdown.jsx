@@ -8,6 +8,7 @@ function Dropdown({ list, onSelect, componentId, listId }) {
   const dropdownRef = useRef();
 
   const handleToggleDD = (e) => {
+    e.stopPropagation();
     if (dropdownRef && !dropdownRef.current.contains(e.target)) {
       setToggleDD(false);
     } else {
@@ -23,7 +24,9 @@ function Dropdown({ list, onSelect, componentId, listId }) {
     };
   }, []);
 
-  const handleSelect = (item) => {
+  const handleSelect = (e) => {
+    e.stopPropagation();
+    const item = e.target;
     onSelect({ item, componentId, listId });
   };
 

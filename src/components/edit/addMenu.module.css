@@ -1,18 +1,28 @@
-/* .add-menu {
-  padding: 10px;
+.add-menu {
+  /* padding: 10px; */
   border-radius: 5px;
-  background-color: #fff;
+  /* background-color: #fff; */
   display: flex;
   flex-direction: column;
-  gap: 10px;
-} */
+  /* gap: 10px; */
+}
 
 .add-menu-form-call {
   /* background-color: #f1f1f1;
   border-radius: 5px; */
-  padding: 10px;
-  text-align: center;
+  /* padding: 10px;
+  cursor: pointer; */
+  outline: none;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 10px 16px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: 200ms;
+  font-size: 14px;
+  font-weight: 500;
+  width: inherit;
+  align-items: center;
 }
 
 .add-menu-form-call:hover {
@@ -33,6 +43,16 @@
   border: 1px solid #00a2ff;
   padding: 10px;
   font-size: 16px;
+  font: inherit;
+}
+
+.add-menu-form textarea {
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #00a2ff;
+  padding: 10px;
+  font-size: 16px;
+  font: inherit;
 }
 
 .add-menu-form-footer {

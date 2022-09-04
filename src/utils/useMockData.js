@@ -62,6 +62,8 @@ const useMockData = () => {
           cardName: card.cardName,
           listId: card.listId,
           label: card.label,
+          date: card.date,
+          task: card.task,
         });
         // await httpService.put("/cards/" + card.id + ".json", card);
         incrementCount();

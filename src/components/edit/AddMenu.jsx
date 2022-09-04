@@ -11,8 +11,10 @@ function AddMenu({
   menuFormClass,
   menuFormTextClass,
   id,
+  description,
 }) {
   const [showMenu, setShowMenu] = useState(false);
+  const [minValueLength, setMinValueLength] = useState(false);
 
   // const scrollRef = useRef();
   // const elementToScroll = scrollRef.current;
@@ -29,11 +31,24 @@ function AddMenu({
   //   element.scrollIntoView({ smoothScroll: true });
   // };
 
+  const onInputChangeHandler = (e) => {
+    e.target.value.length < 4 || e.target.value
+      ? setMinValueLength(true)
+      : setMinValueLength(false);
+  };
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
     onSubmit(e);
     setShowMenu(false);
+    setMinValueLength(false);
   };
+
+  const onCloseHandler = () => {
+    setShowMenu(false);
+    setMinValueLength(false);
+  };
+
   return (
     <div className={styles["add-menu"]}>
       {showMenu ? (
@@ -41,27 +56,43 @@ function AddMenu({
           className={`${styles["add-menu-form"]} ${menuFormClass || ""}`}
           onSubmit={onSubmitHandler}
         >
-          <input
-            autoFocus
-            type="text"
-            placeholder={placeholder || "Enter item title"}
-            defaultValue={placeholder}
-            name={id}
-          />
+          {description ? (
+            <textarea
+              required
+              autoFocus
+              rows="3"
+              maxLength="180"
+              placeholder={placeholder}
+              defaultValue={placeholder}
+              name={id}
+            ></textarea>
+          ) : (
+            <input
+              required
+              autoFocus
+              type="text"
+              minLength="3"
+              placeholder={placeholder || "Enter item title"}
+              defaultValue={placeholder}
+              name={id}
+              onChange={onInputChangeHandler}
+            />
+          )}
           <div className={styles["add-menu-form-footer"]}>
             <button type="submit">{submitText || "Add"}</button>
-            <X onClick={() => setShowMenu(false)} />
+            <X onClick={onCloseHandler} />
           </div>
         </form>
       ) : (
-        <p
+        <button
+          disabled={minValueLength}
           className={`${styles["add-menu-form-call"]} ${
             menuFormTextClass || ""
           }`}
           onClick={() => setShowMenu(true)}
         >
           {buttonText || "Add Item"}
-        </p>
+        </button>
       )}
     </div>
   );

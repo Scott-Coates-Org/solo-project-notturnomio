@@ -2,32 +2,40 @@
   {
     "id": "b6cfa9ae-788e-42ec-ab80-d63d2fc5f627",
     "cardName": "First Task",
+    "date": { "date": "2022-09-29", "time": "12:00" },
     "listId": "775db463-8b02-4d05-9dbe-6945cdc95d67",
     "label": [
       "daa1345b-a789-438b-97f9-1db71d8a5323",
       "49adfcb4-2d70-443d-a9fa-f82438619e18"
-    ]
+    ],
+    "task": ["empty"]
   },
   {
     "id": "f99c8218-ac22-4b16-bbdf-667088dc0bf0",
     "cardName": "Second Task",
+    "date": { "date": "2022-08-07", "time": "09:00" },
     "listId": "a3350f54-6a05-4fc5-88d8-259c49689184",
-    "label": ["12b48155-2a3b-4ad1-be54-88f442871711"]
+    "label": ["12b48155-2a3b-4ad1-be54-88f442871711"],
+    "task": ["empty"]
   },
   {
     "id": "5d276e30-3cbc-456c-88be-494d220ebdcd",
     "cardName": "Third Task",
+    "date": { "date": "2022-09-11", "time": "10:30" },
     "listId": "775db463-8b02-4d05-9dbe-6945cdc95d67",
     "label": [
       "e5d01e24-0762-4c01-8731-8922002fb897",
       "f9350f01-b273-46d5-bbc2-daffc95b029c",
       "b8e91043-f4d7-49cd-a820-8d207603f45c"
-    ]
+    ],
+    "task": ["empty"]
   },
   {
     "id": "5b90e277-a720-44cc-af84-e209e6d484fc",
     "cardName": "Additional Task",
+    "date": { "date": "2022-08-16", "time": "14:20" },
     "listId": "6348a035-4c8c-4829-a1ef-faab24e2edd1",
-    "label": ["49adfcb4-2d70-443d-a9fa-f82438619e18"]
+    "label": ["49adfcb4-2d70-443d-a9fa-f82438619e18"],
+    "task": ["empty"]
   }
 ]

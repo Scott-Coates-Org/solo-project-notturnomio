@@ -12,6 +12,7 @@ import { ref, set, onValue, remove } from "firebase/database";
 import { getListsDropStyle } from "./utils/style";
 // import Login from './components/login/Login'
 import useMockData from "./utils/useMockData";
+import { getFormatedNowDate } from "./utils/dateFormat";
 // import listsDummyData from "./mockData/lists.json";
 
 // export const dataLabels = [
@@ -97,6 +98,7 @@ function App() {
   const [listsData, setListsData] = useState();
   const [cardsData, setCardsData] = useState();
   const [labelsData, setLabelsData] = useState();
+  const [tasksData, setTasksData] = useState();
 
   // const [lists, setLists] = useState(dataLists);
   // const [cards, setCards] = useState(dataCards);
@@ -105,6 +107,7 @@ function App() {
 
   useEffect(() => {
     geAppData();
+    // console.log(tasksData);
   }, [setListsData]);
 
   async function geAppData() {
@@ -128,6 +131,11 @@ function App() {
           labelsArray.push(data.cardLabels[label]);
         }
         setLabelsData(labelsArray);
+        const tasksArray = [];
+        for (const task in data.cardTasks) {
+          tasksArray.push(data.cardTasks[task]);
+        }
+        setTasksData(tasksArray);
         // updateListData(postElement, data);
       });
       setLoading(false);
@@ -310,7 +318,6 @@ function App() {
       } else {
         newList.cards.push(newCardId);
       }
-      // console.log(newList);
 
       await set(ref(database, "lists/" + newCardListId), {
         ...newList,
@@ -320,6 +327,8 @@ function App() {
         cardName: newCardName,
         listId: newCardListId,
         label: ["empty"],
+        task: ["empty"],
+        date: getFormatedNowDate(),
       });
     } catch (error) {
       console.log(error.message);
@@ -366,8 +375,6 @@ function App() {
         }
         if (destinationList.cards === undefined) {
           destinationList.cards = [draggedCard[0]];
-
-          console.log(destinationList);
         } else {
           destinationList.cards.splice(destination.index, 0, draggedCard[0]);
         }
@@ -437,6 +444,7 @@ function App() {
                                 onDeleteCard={handleDeleteCard}
                                 cardsData={cardsData && cardsData}
                                 labelsData={labelsData && labelsData}
+                                tasksData={tasksData && tasksData}
                               />
                             </div>
                           )}

@@ -1,3 +1,9 @@
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .card {
   padding: 10px;
   border-radius: 5px;
@@ -5,7 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .card-top {
@@ -13,14 +19,28 @@
   gap: 5px;
 }
 
-.card-top svg {
+.card-top-labels svg {
   opacity: 0;
   transition: 200ms;
 }
 
-.card:hover .card-top svg {
+.card:hover .card-top-labels:hover svg {
   cursor: pointer;
   opacity: 1;
+}
+
+.card-top-dd-button svg {
+  background-color: rgb(235, 235, 235);
+  color: #1c287b;
+  border: 1px solid #686868;
+  opacity: 0;
+  transition: 200ms;
+}
+
+.card-top-dd-button:hover svg {
+  background-color: rgb(192, 192, 192);
+  color: #1c287b;
+  border: 1px solid #686868;
 }
 
 .card-top-labels {
@@ -49,4 +69,13 @@
   display: flex;
   align-items: center;
   gap: 2px;
+}
+
+.card-footer-date {
+  font-style: italic;
+  color: #4e4e4e;
+}
+
+.card-footer-tasks {
+  margin-left: auto;
 }

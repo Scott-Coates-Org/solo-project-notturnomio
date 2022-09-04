@@ -8,10 +8,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .modal-content {
   background-color: #fff;
   border-radius: 3px;
-  padding: 20px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.custom-scroll {
 }

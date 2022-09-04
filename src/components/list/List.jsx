@@ -14,6 +14,7 @@ function List({
   onDeleteCard,
   cardsData,
   labelsData,
+  tasksData,
 }) {
   return (
     <div id={listId} className={styles.list} key={listId + listIndex}>
@@ -32,14 +33,15 @@ function List({
           listCards={cards}
           cardsData={cardsData}
           labelsData={labelsData}
+          tasksData={tasksData}
           listId={listId}
           onSelect={onDeleteCard}
         />
         <AddMenu
-          buttonText="Add New Card"
-          submitText="Add Card"
+          buttonText="Add New Task"
+          submitText="Add Task"
           onSubmit={onSubmit}
-          placeholder="Enter card title"
+          placeholder="Enter task title"
           menuFormTextClass={styles["add-new-card"]}
           id={listId}
         />
