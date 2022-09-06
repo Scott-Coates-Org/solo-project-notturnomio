@@ -1,4 +1,4 @@
-import listStyles from "../app.module.css";
+import listStyles from "../components/listsContainer/listsContainer.module.css";
 import cardStyles from "../components/list/list.module.css";
 
 export const getListsDropStyle = (isDraggingOver) => {

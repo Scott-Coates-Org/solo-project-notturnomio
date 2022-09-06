@@ -34,7 +34,7 @@ function Card({
       return `${checkedCount}/${tasksCount}`;
     } else {
       const tasksChecked = tasks.filter((task) => task.checked === true);
-      console.log(tasksChecked);
+      // console.log(tasksChecked);
       tasksCount = cardInfo.task.length;
       checkedCount = tasksChecked.length;
       return `${checkedCount}/${tasksCount}`;
